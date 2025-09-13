@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Phòng chống lừa đảo mạng &amp; buôn bán người</title>
+  <meta name="description" content="Nguồn tin, thủ thuật, kênh trợ giúp và số nóng về lừa đảo mạng và mua bán người (Việt Nam & quốc tế)." />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#5eead4; --muted:#9aa4b2; --glass: rgba(255,255,255,0.04);
+      --radius:14px; --maxw:1100px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: #e6eef6;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(93,176,255,0.06), transparent),
+                  linear-gradient(180deg,#071021 0%, #071426 60%);
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      padding:32px 20px;
+    }
+    .wrap{
+      width:100%;
+      max-width:var(--maxw);
+    }
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      margin-bottom:18px;
+    }
+    .logo{
+      width:84px; height:84px;
+      background:linear-gradient(135deg,var(--accent),#60a5fa);
+      border-radius:18px;
+      display:flex; align-items:center; justify-content:center;
+      font-weight:700; color:#05202a; font-size:18px;
+      box-shadow: 0 6px 30px rgba(0,0,0,0.35), 0 1px 0 rgba(255,255,255,0.02) inset;
+    }
+    h1{margin:0; font-size:20px}
+    p.lead{margin:0;color:var(--muted); font-size:14px}
+    main{
+      display:grid;
+      grid-template-columns: 1fr 360px;
+      gap:20px;
+      align-items:start;
+      margin-top:18px;
+    }
+
+    /* Left column */
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow: 0 6px 30px rgba(2,6,23,0.6);
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+    .feed .item{
+      display:flex;
+      gap:12px
+;      padding:12px;
+      border-radius:12px;
+      transition:background .18s, transform .12s;
+      align-items:flex-start;
+    }
+    .feed .item:hover{ background: rgba(255,255,255,0.02); transform:translateY(-4px); }
+    .thumb{
+      width:84px; height:60px; border-radius:8px;
+      background:linear-gradient(180deg,#0b1220,#071427);
+      flex-shrink:0; display:flex;align-items:center;justify-content:center;color:var(--muted);
+      font-size:12px;
+      border:1px solid rgba(255,255,255,0.02);
+    }
+    .meta{flex:1}
+    .meta h3{margin:0 0 6px 0; font-size:15px}
+    .meta p{margin:0;color:var(--muted);font-size:13px}
+
+    .tag{display:inline-block;background:var(--glass); padding:6px 10px; border-radius:999px; color:var(--muted); font-size:12px; margin-right:8px}
+
+    /* Right column / sidebar */
+    .sidebar .hotline{
+      display:flex; gap:12px; align-items:center;
+      background: linear-gradient(90deg, rgba(78,115,255,0.06), rgba(94,234,212,0.03));
+      padding:12px; border-radius:12px;
+    }
+    .hotline .num{font-weight:700; font-size:18px; color:#05202a; background:white; padding:8px 12px; border-radius:10px}
+    .list{margin-top:12px; display:flex; flex-direction:column; gap:10px}
+    .small{font-size:13px;color:var(--muted)}
+
+    /* filters & search */
+    .controls{display:flex; gap:10px; margin-bottom:10px; align-items:center}
+    .search{
+      flex:1; display:flex; gap:8px; align-items:center;
+      background:rgba(255,255,255,0.02); padding:8px; border-radius:10px;
+      border:1px solid rgba(255,255,255,0.02);
+    }
+    .search input{background:transparent;border:0;outline:0;color:inherit;font-size:14px;width:100%}
+    .btn{background:var(--accent); color:#05202a; padding:8px 12px; border-radius:10px; font-weight:600; border:0; cursor:pointer}
+
+    footer{margin-top:18px; color:var(--muted); font-size:13px; display:flex;flex-direction:column;gap:8px}
+    .sources{display:flex;flex-wrap:wrap;gap:8px}
+    a.source{color:var(--accent); text-decoration:none; background:rgba(255,255,255,0.02); padding:6px 8px; border-radius:8px; font-size:13px}
+
+    /* responsive */
+    @media (max-width:980px){
+      main{ grid-template-columns: 1fr; }
+      .sidebar{order:-1}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <!-- Banner -->
+<div class="banner">
+  <h2>Hưởng ứng Ngày thế giới phòng, chống mua bán người 30-7-2025</h2>
+  <p>“Mua bán người là <strong>HOẠT ĐỘNG TỘI PHẠM CÓ TỔ CHỨC</strong>. 
+     Hãy cùng hành động để chấm dứt các hình thức bóc lột”</p>
+</div>
+
+<style>
+  .banner {
+    background: linear-gradient(90deg, #2563eb, #0ea5e9); /* xanh dương → xanh ngọc */
+    padding: 24px;
+    border-radius: 14px;
+    margin-bottom: 24px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  }
+  .banner h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .banner p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+</style>
+        <h1>Phòng chống lừa đảo mạng &amp; buôn bán người</h1>
+        <p class="lead">Tin tức — Thủ đoạn — Kênh chính thống — Số nóng trợ giúp (Việt Nam &amp; quốc tế)</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="card feed" aria-label="Tin tức và thủ đoạn">
+        <div class="controls">
+          <div class="search" role="search">
+            <input id="q" placeholder="Tìm tin, thủ đoạn, hoặc nguồn..." aria-label="Tìm kiếm" />
+            <button class="btn" onclick="doSearch()">Tìm</button>
+          </div>
+          <div class="tag">Cập nhật: tự động</div>
+        </div>
+
+        <h2 style="margin-top:6px">Tin tức mới & bài viết chọn lọc</h2>
+        <!-- News items (sample, có nguồn) -->
+        <div id="newsList">
+          <article class="item" data-title="Chiến dịch toàn cầu phát hiện 1.194 nghi ngờ nạn nhân">
+            <div class="thumb">INTERPOL</div>
+            <div class="meta">
+              <h3>Chiến dịch toàn cầu phát hiện 1.194 nghi ngờ nạn nhân, bắt 158 nghi phạm</h3>
+              <p class="small">INTERPOL điều phối chiến dịch quốc tế (11 Jul 2025). <a class="source" href="https://www.interpol.int/en/News-and-Events/News/2025/Global-human-trafficking-operation-detects-1-194-potential-victims-arrests-158-suspects" target="_blank" rel="noopener">Nguồn: INTERPOL</a></p>
+            </div>
+          </article>
+
+          <article class="item" data-title="Tổng đài 111 tiếp nhận tố giác về mua bán người">
+            <div class="thumb">VN GOV</div>
+            <div class="meta">
+              <h3>Tổng đài 111: tiếp nhận tố giác, tin báo về hành vi mua bán người (24/7)</h3>
+              <p class="small">Chính phủ Việt Nam vận hành số ngắn 111 để tiếp nhận tin báo mua bán người. <a class="source" href="https://baochinhphu.vn/tong-dai-111-tiep-nhan-to-giac-tin-bao-ve-hanh-vi-mua-ban-nguoi-102250701212714901.htm" target="_blank" rel="noopener">Nguồn: Chính phủ</a></p>
+            </div>
+          </article>
+
+          <article class="item" data-title="Tuyệt chiêu lừa tuyển dụng 'việc nước ngoài' dẫn tới bóc lột">
+            <div class="thumb">Investigative</div>
+            <div class="meta">
+              <h3>Đường dây tuyển dụng lừa bán người sang châu Âu &amp; UK — điều tra mới</h3>
+              <p class="small">Báo nước ngoài/điều tra mô tả lộ trình và lừa gạt người trẻ bằng hứa hẹn việc làm ở nước ngoài. <a class="source" href="https://www.thetimes.co.uk/article/human-trafficking-route-uk-qr3rh256f" target="_blank" rel="noopener">Nguồn: The Times</a></p>
+            </div>
+          </article>
+
+          <article class="item" data-title="Xu hướng 'gian lận công việc/crypto' kèm lừa bán người">
+            <div class="thumb">Asia/Reports</div>
+            <div class="meta">
+              <h3>Xu hướng: tuyển dụng việc công nghệ / crypto làm mồi dẫn tới bóc lột ở nước ngoài</h3>
+              <p class="small">Nhiều vụ phát hiện cưỡng ép lao động liên quan chiêu mời làm việc công nghệ/crypto. <a class="source" href="https://timesofindia.indiatimes.com/city/mumbai/man-held-for-trafficking-2-youths-to-laos-for-crypto-frauds/articleshow/121418980.cms" target="_blank" rel="noopener">Nguồn: Times of India</a></p>
+            </div>
+          </article>
+
+          <article class="item" data-title="Báo cáo: Xu hướng nội địa hóa và lừa đảo kỹ thuật số">
+            <div class="thumb">ODM</div>
+            <div class="meta">
+              <h3>Human Trafficking in Vietnam: từ tuyến truyền thống tới 'digital deception'</h3>
+              <p class="small">Bài phân tích về xu hướng buôn bán người trong nước và các thủ đoạn lừa trên nền tảng số. <a class="source" href="https://vietnam.opendevelopmentmekong.net/topics/human-trafficking-in-vietnam-from-traditional-routes-to-digital-deception/" target="_blank" rel="noopener">Nguồn: OpenDevelopmentMekong</a></p>
+            </div>
+          </article>
+        </div>
+
+        <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03); margin:12px 0">
+
+        <h2>Thủ đoạn lừa đảo mạng (mẫu &amp; cách phòng tránh)</h2>
+        <div id="scams">
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <div class="card" style="padding:12px;flex:1;min-width:240px">
+              <strong>1. Tuyển dụng 'việc nước ngoài' giả</strong>
+              <p class="small">Mồi: lương cao, lo giấy tờ. Thực tế: đưa tới nước thứ 3, cưỡng ép lao động/ép làm fraud. Phòng: kiểm tra giấy phép công ty, không chuyển tiền trước, xác minh qua đại sứ quán/CS chính thống.</p>
+            </div>
+            <div class="card" style="padding:12px;flex:1;min-width:240px">
+              <strong>2. Tuyển dụng remote/crypto để chiêu mộ</strong>
+              <p class="small">Mồi: làm việc online, đào tạo, 'làm giàu nhanh'. Thực tế: bóc lột, ép làm scam hoặc bán sang tổ chức khác. Phòng: cảnh giác job yêu cầu chuyển tiền hoặc cài phần mềm không rõ nguồn.</p>
+            </div>
+            <div class="card" style="padding:12px;flex:1;min-width:240px">
+              <strong>3. Lừa tình / catfishing kết hợp ép xuất cảnh</strong>
+              <p class="small">Mồi: mối quan hệ, hứa hôn/quan hệ yêu đương để chở nạn nhân đi, lợi dụng: thu tiền, bán, hoặc cưỡng bức. Phòng: không đi nơi vắng, báo tin cho người thân, dùng dịch vụ xác minh người.</p>
+            </div>
+          </div>
+
+          <p class="small" style="margin-top:10px">Các ví dụ & phân tích chi tiết xem tại phần Tin tức phía trên (các bài điều tra, báo chính phủ và báo quốc tế được trích dẫn).</p>
+        </div>
+
+      </section>
+
+      <aside class="card sidebar" aria-label="Kênh trợ giúp & thông tin">
+        <h2>Kênh chính thống & số trợ giúp</h2>
+
+        <div class="list">
+          <div class="hotline">
+            <div style="flex:1">
+              <div class="small">Tổng đài quốc gia (Phòng, chống mua bán người)</div>
+              <div style="font-weight:700; margin-top:6px; font-size:18px;">111 (24/7)</div>
+              <div class="small" style="margin-top:6px">Đã được thông báo là số ngắn nhận tố giác, tư vấn, hỗ trợ tâm lý và pháp lý.</div>
+              <p class="small" style="margin-top:6px">Nguồn: Chính phủ Việt Nam.</p>
+            </div>
+          </div>
+
+          <div style="padding:10px; border-radius:10px; background:rgba(255,255,255,0.015)">
+            <div class="small">Tổ chức quốc tế / hỗ trợ</div>
+            <div style="margin-top:6px">
+              <strong>IOM Vietnam</strong> — tham vấn, hỗ trợ phục hồi: <a class="source" href="https://vietnam.iom.int/en/contact-us" target="_blank" rel="noopener">Trang liên hệ IOM VN</a>
+            </div>
+            <div style="margin-top:8px">
+              <strong>National Human Trafficking Hotline (USA)</strong>: 1-888-373-7888 — hỗ trợ 24/7, chat, email (tham khảo nguồn quốc tế). <a class="source" href="https://humantraffickinghotline.org/en/contact" target="_blank" rel="noopener">Nguồn</a>
+            </div>
+          </div>
+
+          <div style="padding:10px; border-radius:10px; background:rgba(255,255,255,0.015); display:flex; flex-direction:column; gap:6px">
+            <div><strong>Danh sách kênh tham khảo (một số số nóng khác):</strong></div>
+            <div class="small">- Vietnam Women's Union: +84 (0)4 3971 9913. (tham khảo danh sách IOM).</div>
+            <div class="small">- Department of Child Care &amp; Protection (MOLISA): 1-800-1567 (tham khảo danh sách hỗ trợ quốc gia).</div>
+            <div class="small" style="margin-top:6px">Luôn ưu tiên gọi 111 nếu nghi ngờ mua bán người trong phạm vi Việt Nam.</div>
+          </div>
+
+          <div style="padding:10px; border-radius:10px; background:rgba(255,255,255,0.01);">
+            <div class="small"><strong>Nếu bạn hoặc người quen đang trong nguy hiểm ngay lập tức:</strong></div>
+            <ul class="small" style="margin:6px 0 0 18px; padding:0; color:var(--muted)">
+              <li>Gọi 111 (Tổng đài phòng, chống mua bán người, VN) — 24/7.</li>
+              <li>Liên hệ công an địa phương / số khẩn cấp nếu bị đe doạ.</li>
+              <li>Ghi âm/ghi chú chi tiết (thời gian, địa điểm, thông tin người liên quan) — hữu ích khi tố giác.</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03); margin:12px 0">
+
+        <h3>Nhận diện & báo tin nhanh</h3>
+        <p class="small">Bạn có thể gửi link, hình ảnh, hoặc mô tả chi tiết tới các kênh chính thức; tránh tự hành xử rủi ro (không tự ý di chuyển nạn nhân mà không có hỗ trợ chuyên nghiệp).</p>
+
+      </aside>
+    </main>
+
+    <footer>
+      <div class="small">Phiên bản: 1.0 • Mục tiêu: cung cấp thông tin đáng tin cậy & kênh trợ giúp nhanh.</div>
+
+      <div class="sources small" aria-label="Nguồn tham khảo">
+        <a class="source" href="https://www.interpol.int/en/News-and-Events/News/2025/Global-human-trafficking-operation-detects-1-194-potential-victims-arrests-158-suspects" target="_blank" rel="noopener">INTERPOL (Jul 2025)</a>
+        <a class="source" href="https://baochinhphu.vn/tong-dai-111-tiep-nhan-to-giac-tin-bao-ve-hanh-vi-mua-ban-nguoi-102250701212714901.htm" target="_blank" rel="noopener">Báo Chính phủ (Tổng đài 111)</a>
+        <a class="source" href="https://vietnam.opendevelopmentmekong.net/topics/human-trafficking-in-vietnam-from-traditional-routes-to-digital-deception/" target="_blank" rel="noopener">OpenDevelopmentMekong</a>
+        <a class="source" href="https://vietnam.iom.int/en/contact-us" target="_blank" rel="noopener">IOM Vietnam (contact)</a>
+        <a class="source" href="https://humantraffickinghotline.org/en/contact" target="_blank" rel="noopener">National Human Trafficking Hotline (US)</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const news = Array.from(document.querySelectorAll('#newsList .item'));
+    function doSearch(){
+      const q = document.getElementById('q').value.trim().toLowerCase();
+      news.forEach(n=>{
+        const title = n.dataset.title.toLowerCase();
+        n.style.display = title.includes(q) || q === '' ? 'flex' : 'none';
+      })
+    }
+
+    // small accessibility touch: focus search on load for quick testing
+    window.addEventListener('load', ()=>{ const el = document.getElementById('q'); if(el) el.focus(); });
+  </script>
+</body>
+</html>
+
